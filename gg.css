@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+
+body{
+   
+   
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1610%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1611%26quot%3b)'%3e%3c/rect%3e%3cpath d='M 0%2c481 C 72%2c421.6 216%2c217.2 360%2c184 C 504%2c150.8 576%2c346.6 720%2c315 C 864%2c283.4 936%2c38.6 1080%2c26 C 1224%2c13.4 1368%2c206.8 1440%2c252L1440 1000L0 1000z' fill='rgba(5%2c 35%2c 62%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c753 C 288%2c738.4 1152%2c694.6 1440%2c680L1440 1000L0 1000z' fill='rgba(3%2c 50%2c 86%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1610'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='7.64%25' y1='-11%25' x2='92.36%25' y2='111%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1611'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(13%2c 59%2c 195%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
+    height: 658px;
+    color: wheat;
+}
+
+
+.heder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding: 45px 5%;
+    background-color: transparent;
+}
+  
+.logo{
+    text-decoration: none;
+    font-weight: bolder;
+    color: wheat;
+    font-size: 25px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    text-decoration: none;
+    color: wheat;
+    font-size: 17px;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 0;
+
+
+}
+
+.contant{
+    max-width: 600px;
+}
+
+h1{
+    font-size:56px ;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size:32px ;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 14px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.buton{
+    width:345px ;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buton a{
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    border: 2px solid #1c3141;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#081b29 ;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+    z-index: 1;
+
+}
+
+.buton a:hover{
+    background-color:#081b29 ;
+    color: wheat;
+    border: 2px solid wheat;
+}
+
+.buton a::before{
+    content: '';
+    top:0 ;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+.buton a:hover::before{
+    width: 100%;
+}
+
+
+.social{
+    position: absolute;
+    width: 170px;
+    bottom: 118px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.social a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #1c3141;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #00abf0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: .8s;
+}
+
+
+.social a:hover{
+    background-color:#081b29 ;
+    color: wheat;
+    border: 2px solid wheat;
+}
+
+.social a::before{
+    content: '';
+    top:0 ;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.social a:hover::before{
+    width: 100%;
+}
+
+
+.ll{
+    background: url(maxence-malak-RmO4_X4rImc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 441px;
+    overflow: hidden;
+    border: 3px solid #1c3141;
+    border-radius: 42px;
+    position: relative;
+    left: 30px;
+    top: 12px;
+    transition: .8s;
+}
+
+.ll:hover{
+    border: 2px solid wheat;
+    cursor: pointer;
+}
